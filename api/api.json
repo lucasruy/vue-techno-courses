@@ -1,0 +1,211 @@
+{
+  "home": {
+    "id": "home",
+    "title": "Techno",
+    "description": "Cursos online de UX/UI Design e Front End.",
+    "assessments": [
+      {
+        "name": "Mariana",
+        "description": "Eu gostei muito do curso, com ele eu consegui fazer o meu primeiro site."
+      },
+      {
+        "name": "Matheus",
+        "description": "Consegui meu primeiro emprego logo após terminar esse curso."
+      },
+      {
+        "name": "Pedro",
+        "description": "Gostei muito do curso, mas poderia maneirar um pouco no sotaque."
+      },
+      {
+        "name": "Maria",
+        "description": "Curso muito bom, quando vai sair o de Vue.js?"
+      }
+    ]
+  },
+  "contact": {
+    "id": "contato",
+    "title": "Contato",
+    "description": "Entre em contato que responderemos em até 24h.",
+    "details": {
+      "phone": "21 9999-9999",
+      "email": "contato@gmail.com",
+      "address": "Rua Ali Perto, Botafogo - RJ"
+    }
+  },
+  "courses": {
+    "id": "cursos",
+    "title": "Cursos",
+    "description": "Inscreva-se em um dos nossos planos e obtenha acesso completo a todos os nossos cursos.",
+    "courses": [
+      {
+        "id": "javascript",
+        "name": "JavaScript",
+        "totalClasses": 120,
+        "hours": 34,
+        "description": "Esse é um curso completo de JavaScript, você irá prender tudo sobre variáveis, objetos, arrays e funções."
+      },
+      {
+        "id": "html-e-css",
+        "name": "HTML e CSS",
+        "totalClasses": 80,
+        "hours": 22,
+        "description": "Nesse curso você irá aprender como utilizar tags de HTML para estruturar o conteúdo da sua página. E também como estiliza-las com CSS."
+      },
+      {
+        "id": "ux-design",
+        "name": "UX Design",
+        "totalClasses": 70,
+        "hours": 18,
+        "description": "Aprenda todos os fundamentos de UX Design nesse curso. Aprenda como pesquisar, analisar e desenvolver um projeto com foco na experiência do usuário."
+      }
+    ]
+  },
+  "course": [
+    {
+      "id": "html-e-css",
+      "name": "HTML e CSS",
+      "totalClasses": 80,
+      "hours": 22,
+      "description": "Nesse curso você irá aprender como utilizar tags de HTML para estruturar o conteúdo da sua página. E também como estiliza-las com CSS.",
+      "classes": [
+        {
+          "id": "html",
+          "name": "HTML e Tags"
+        },
+        {
+          "id": "css",
+          "name": "CSS e Propriedades"
+        },
+        {
+          "id": "flexbox",
+          "name": "CSS Flexbox"
+        }
+      ]
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "totalClasses": 120,
+      "hours": 34,
+      "description": "Esse é um curso completo de JavaScript, você irá prender tudo sobre variáveis, objetos, arrays e funções.",
+      "classes": [
+        {
+          "id": "variaveis",
+          "name": "Variáveis e Constantes"
+        },
+        {
+          "id": "funcoes",
+          "name": "Funções e Métodos"
+        },
+        {
+          "id": "objetos",
+          "name": "Objetos e Arrays"
+        }
+      ]
+    },
+    {
+      "id": "ux-design",
+      "name": "UX Design",
+      "totalClasses": 70,
+      "hours": 18,
+      "description": "Aprenda todos os fundamentos de UX Design nesse curso. Aprenda como pesquisar, analisar e desenvolver um projeto com foco na experiência do usuário.",
+      "classes": [
+        {
+          "id": "pesquisa",
+          "name": "Pesquisa"
+        },
+        {
+          "id": "personas",
+          "name": "Personas"
+        },
+        {
+          "id": "prototipo",
+          "name": "Protótipo"
+        }
+      ]
+    }
+  ],
+  "classroom": [
+    {
+      "id": "css",
+      "name": "CSS e Propriedades",
+      "course": {
+        "id": "html-e-css",
+        "name": "HTML e CSS"
+      },
+      "youtube": "mWYCWAPj0gM"
+    },
+    {
+      "id": "flexbox",
+      "name": "CSS Flexbox",
+      "course": {
+        "id": "html-e-css",
+        "name": "HTML e CSS"
+      },
+      "youtube": "qq0z-YSPJLI"
+    },
+    {
+      "id": "html",
+      "name": "HTML e Tags",
+      "course": {
+        "id": "html-e-css",
+        "name": "HTML e CSS"
+      },
+      "youtube": "nl-Is79eyD8"
+    },
+    {
+      "id": "funcoes",
+      "name": "Funções e Métodos",
+      "course": {
+        "id": "javascript",
+        "name": "JavaScript"
+      },
+      "youtube": "n5uiJr-v0KQ"
+    },
+    {
+      "id": "objetos",
+      "name": "Objetos e Arrays",
+      "course": {
+        "id": "javascript",
+        "name": "JavaScript"
+      },
+      "youtube": "fu-enUG2VEE"
+    },
+    {
+      "id": "variaveis",
+      "name": "Variáveis e Constantes",
+      "course": {
+        "id": "javascript",
+        "name": "JavaScript"
+      },
+      "youtube": "pKTOT63X9XQ"
+    },
+    {
+      "id": "personas",
+      "name": "Personas",
+      "course": {
+        "id": "ux-design",
+        "name": "UX Design"
+      },
+      "youtube": "eqownJ3mASI"
+    },
+    {
+      "id": "pesquisa",
+      "name": "Pesquisa",
+      "course": {
+        "id": "ux-design",
+        "name": "UX Design"
+      },
+      "youtube": "eYDv4_s8TTM"
+    },
+    {
+      "id": "prototipo",
+      "name": "Protótipo",
+      "course": {
+        "id": "ux-design",
+        "name": "UX Design"
+      },
+      "youtube": "3C_9vIhmgm4"
+    }
+  ]
+}
