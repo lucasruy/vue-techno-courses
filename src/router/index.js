@@ -1,21 +1,49 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from '../views/Home.vue'
-import Contato from '../views/Contato.vue'
+import Home from '@/views/Home.vue'
+import Course from '@/views/Course.vue'
+import Courses from '@/views/Courses.vue'
+import Contact from '@/views/Contact.vue'
+import NotFound from '@/views/NotFound.vue'
+import Classroom from '@/views/Classroom.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '*',
+    name: 'NotFound',
+    component: NotFound
+  },
+  {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: Home
   },
   {
-    path: '/contato',
-    name: 'Contato',
-    component: Contato
+    path: '/courses',
+    name: 'courses',
+    component: Courses
+  },
+  {
+    path: '/courses/:course',
+    name: 'course',
+    component: Course,
+    props: true,
+    children: [
+      {
+        path: ':classroom',
+        name: 'classroom',
+        component: Classroom,
+        props: true,
+      },
+    ]
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: Contact
   },
 ]
 
