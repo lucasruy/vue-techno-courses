@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Deploy to Netlify
-      - uses: jsmrcaga/action-netlify-deploy@v1.1.0
+      - uses: jsmrcaga/action-netlify-deploy@v1.7.2
         with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
           NETLIFY_DEPLOY_TO_PROD: true
