@@ -17,10 +17,12 @@ export default {
       fetch(`${BASE_PATH}${url}`)
         .then(response => response.json())
         .then(response => {
-          setTimeout(() => {
-            this.content = response
-            this.loading = false
-          }, 1000)
+          if (response === 'Not found') {
+            throw new Error(response)
+          }
+          
+          this.content = response
+          this.loading = false
         })
         .catch((err) => {
           console.error(err)
