@@ -1,0 +1,21 @@
+# .github/workflows/netlify.yml
+
+name: Build and Deploy to Netlify
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy to Netlify
+      - uses: jsmrcaga/action-netlify-deploy@v1.7.2
+        with:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          NETLIFY_DEPLOY_TO_PROD: true
