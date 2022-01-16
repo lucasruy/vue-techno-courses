@@ -1,3 +1,5 @@
+const BASE_PATH = 'https://61e35843fbee6800175eb002.mockapi.io/api/v1'
+
 export default {
   data() {
     return {
@@ -12,7 +14,7 @@ export default {
       this.error = false
       this.content = null
 
-      fetch(`http://localhost:3000${url}`)
+      fetch(`${BASE_PATH}${url}`)
         .then(response => response.json())
         .then(response => {
           setTimeout(() => {

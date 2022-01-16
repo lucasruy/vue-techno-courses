@@ -10,20 +10,20 @@
     </transition>
     <transition>
       <div v-if="content">
-        <h1>{{content.title}}</h1>
-        <p>{{content.description}}</p>
+        <h1>Contato</h1>
+        <p>Entre em contato que responderemos em até 24h.</p>
         <ul>
           <li>
             <b>Email:</b>
-            {{content.details.email}}
+            contato@technocourses.com
           </li>
           <li>
             <b>Telefone:</b>
-            {{content.details.phone}}
+            21 9999-9999
           </li>
           <li>
             <b>Endereço:</b>
-            {{content.details.address}}
+            Rua Ali Perto, Botafogo - RJ
           </li>
         </ul>
       </div>
@@ -32,13 +32,7 @@
 </template>
 
 <script>
-import getPageData from '@/mixins/getPageData.js'
-
 export default {
-  name: 'Contact',
-  mixins: [getPageData],
-  created() {
-    this.getPageData('/contact')
-  }
+  name: 'Contact'
 }
 </script>
